@@ -9,9 +9,9 @@ resource "azurerm_network_interface" "example" {
   ip_configuration {
     public_ip_address_id           = data.azurerm_public_ip.pipdata.id // Reference to existing Public IP
     name                           = "internal"
-    // Fetch subnet ID from existing Azure subnet data source
+    // Fetch subnet ID from existing Azure subnet data source 
     subnet_id                      = data.azurerm_subnet.frontendsubnetdata.id
-    private_ip_address_allocation  = "Dynamic" // Dynamic private IP allocation
+    private_ip_address_allocation  = "Dynamic" // Dynamic private IP allocation 
   }
 }
 
