@@ -14,7 +14,7 @@ variable "nic_resource_group" {
   type        = string
 }
 
-// No need of id variables for NIC and PIP as data sources are used
+// Variables for Network Interface configuration (commented out as not used in current code)
 
 # variable "pip_id" {
 #   description = "The ID of the public IP address associated with the network interface"
